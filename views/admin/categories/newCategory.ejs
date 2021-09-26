@@ -1,0 +1,22 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navbar') %>
+<body>
+    <section>
+        <div class="container">
+            <div class="card mt-4 mb-4">
+                <div class="card-header">Create a new category</div>
+                    <div class="card-body">
+                        <form action="/categories/save" method="POST">
+                            <label for="categoryName">Title of category</label>
+                            <input name="tlt" class="form-control"  type="text" id="titleHelp" placeholder="Enter a title">
+                            <small id="titleHelp" class="form-text text-muted">Create a new category for the blog</small>
+                            <button type="submit" class="btn btn-block btn-success">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="card-footer"></div>
+            </div>
+        </div>
+    </section>
+<%- include('../../partials/footer') %>
+
