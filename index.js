@@ -1,5 +1,5 @@
 const express = require('express')
-const listen = require('./severStart')
+// const listen = require('./severStart')
 // const bodyParser = require('body-parser')
 const app = express()
 
@@ -33,5 +33,10 @@ app.get('/', (req, res)=>{
     res.render('index')
 })
 
-listen.listen
-
+app.listen(3000, (err)=>{
+    if(err){
+        console.log('Warning!!! Server not run!')
+    }else{
+        console.log('Success! Server run at : 3000')
+    }
+})
