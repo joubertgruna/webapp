@@ -27,7 +27,7 @@ router.post('/save', (req, res)=>{
 })
 
 router.get('/list', (req, res)=>{
-    res.send('Route to list all categories')
+    res.render('../views/admin/categories/listCategory')
 })
 
 module.exports = router
