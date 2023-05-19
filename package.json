@@ -4,7 +4,8 @@
   "description": "Imitação do Word Press",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js --debug",
+    "prod": "nodemon index.js --prod"
   },
   "author": "JB",
   "license": "ISC",
